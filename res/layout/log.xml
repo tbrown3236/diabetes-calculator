@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back2"
+            android:id="@+id/btnback"
+            android:onClick="SwitchToblood"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/date"
+            android:id="@+id/lbldate"
+            android:layout_marginTop="47dp" android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/time"
+            android:id="@+id/lbltime"
+            android:layout_marginTop="58dp" android:layout_below="@+id/lbldate" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mealtime"
+            android:id="@+id/lblmealtime" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edtStartDate" android:layout_alignTop="@+id/lbldate" android:layout_centerHorizontal="true"
+            android:onClick="dateonClick" android:editable="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/edtTime" android:layout_alignTop="@+id/lbltime"
+            android:layout_alignStart="@+id/edtStartDate" android:onClick="timeOnClick"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveBloodSugar"
+            android:id="@+id/btnsavebloodsugar"
+            android:onClick="saveData" android:clickable="true" android:layout_below="@+id/edtnotes"
+            android:layout_alignParentRight="true" android:layout_marginRight="26dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bloodSugar"
+            android:id="@+id/lblanswerlog"
+            android:layout_alignEnd="@+id/lblmealtime" android:layout_below="@+id/lblmealtime"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1" android:layout_alignParentStart="true"
+            android:layout_above="@+id/lblanswerlog" android:layout_below="@+id/lbltime" android:id="@+id/radioGroup">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Beforemeal"
+                android:id="@+id/rdobefore" android:layout_gravity="center_horizontal" android:checked="true"
+                android:layout_weight="0.14" android:layout_below="@+id/edtTime"
+                android:layout_alignStart="@+id/btnsavebloodsugar"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Aftermeal"
+                android:id="@+id/rdoafter" android:layout_gravity="center_horizontal" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neither"
+                android:id="@+id/rdoneither" android:layout_gravity="center_horizontal" android:checked="false"/>
+    </RadioGroup>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtanswerlog" android:layout_below="@+id/lblmealtime"
+            android:text="45" android:layout_alignStart="@+id/btnsavebloodsugar"
+            android:layout_alignEnd="@+id/btnback"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtnotes"
+            android:layout_alignStart="@+id/edtTime" android:lines="3" android:layout_below="@+id/edtanswerlog"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/notes"
+            android:id="@+id/lblnotes"
+            android:layout_alignBottom="@+id/edtnotes" android:layout_toStartOf="@+id/edtnotes"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showChart"
+            android:id="@+id/btnchart"
+            android:layout_below="@+id/edtnotes" android:layout_toStartOf="@+id/btnback"
+            android:onClick="switchToChart"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send To Dr."
+            android:id="@+id/btnSendToDr"
+            android:onClick="emailLogToDr"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

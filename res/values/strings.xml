@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">diabetescalc</string>
+     <string name="LogMyData">Log Data</string>
+    <string name="Back2">Back</string>
+    <string name="startdate">Start Date</string>
+    <string name="enddate4">End Date</string>
+    <string name="enddate12">End Date</string>
+    <string name="Startdate2">Start Date</string>
+    <string name="Enddate">End Date</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="mealtime">Meal Time</string>
+    <string name="Beforemeal">Before Meal</string>
+    <string name="Aftermeal">After Meal</string>
+    <string name="neither">Neither</string>
+    <string name="bloodSugar">Blood Sugar</string>
+    <string name="notes">Notes</string>
+    <string name="showChart">Show Chart</string>
+    <string name="saveBloodSugar">Save Blood Sugar</string>
+    <string name="EnteryourGlucose">Enter your glucose</string>
+    <string name="enterglucose">Enter glucose</string>
+    <string name="enterYourA1c">Enter your A1C</string>
+    <string name="enderA1c">Enter A1c</string>
+    <string name="calcAdg">Calculate Adg</string>
+    <string name="calcDCCT">Calculate DCCT</string>
+    <string name="calcanswer">Calculate</string>
+</resources>

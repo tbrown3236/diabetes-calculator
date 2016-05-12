@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:id="@+id/btnAbout" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:onClick="clickAbout"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/btnContact" android:layout_alignBottom="@+id/btnAbout" android:layout_alignParentRight="true"
+            android:onClick="clickContact"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the about page of our application. Below you see two buttons. The about us button takes you to the about us section of my website. the contact us button takes you to the contact form you can submit directly to me the developer if you have any questions, comments, or concerns about our application."
+            android:id="@+id/AboutText" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnAbout"
+            android:layout_marginTop="94dp" android:layout_toLeftOf="@+id/btnContact"/>
+</RelativeLayout>

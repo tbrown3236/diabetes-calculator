@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Preferences"
+            android:id="@+id/btnSavePreferences" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:onClick="savePreferencesClick"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Doctor&apos;s Email:"
+            android:id="@+id/txtdocemail"
+            android:layout_marginTop="32dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edtDrEmail"
+            android:layout_alignTop="@+id/txtdocemail" android:layout_toRightOf="@+id/txtdocemail"
+            android:layout_alignParentRight="true" android:contextClickable="false" android:editable="true"
+            android:hint="Your Dr&apos;s Email"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start Date"
+            android:id="@+id/txtStartDate"
+            android:layout_marginTop="71dp" android:layout_below="@+id/edtDrEmail" android:layout_alignParentLeft="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtStart"
+            android:layout_alignTop="@+id/txtStartDate" android:layout_alignLeft="@+id/edtDrEmail"
+            android:editable="true" android:inputType="date" android:hint="Start Date"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="End Date"
+            android:id="@+id/txtEndDate"
+            android:layout_below="@+id/edtStart" android:layout_alignParentLeft="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEndDate" android:layout_alignTop="@+id/txtEndDate"
+            android:layout_alignLeft="@+id/edtStart" android:inputType="date"
+            android:editable="true" android:hint="End Date"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Subject:"
+            android:id="@+id/txtSubject" android:layout_below="@+id/edtEndDate" android:layout_alignParentLeft="true"
+            android:layout_marginTop="34dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtSubject"
+            android:layout_below="@+id/txtSubject" android:layout_alignParentLeft="true" android:hint="Email Subject"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Note To DR. :"
+            android:id="@+id/txtNote"
+            android:layout_marginTop="27dp" android:layout_below="@+id/edtSubject"
+            android:layout_toLeftOf="@+id/btnSavePreferences"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtDrNotes"
+            android:layout_below="@+id/txtNote"
+            android:editable="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" android:layout_above="@+id/btnSavePreferences"
+            android:hint="Notes To Your Dr."/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_below="@+id/edtDrEmail"
+            android:layout_above="@+id/edtStart" android:layout_alignParentRight="true">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADAG Formula"
+                android:id="@+id/rdoAdagFormula" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACT Formula (Default)"
+                android:id="@+id/rdoActFormula" android:checked="true"/>
+    </RadioGroup>
+</RelativeLayout>

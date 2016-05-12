@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 1"
+                    android:id="@+id/txtalarm1"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"
+                    android:nestedScrollingEnabled="false"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes1"
+                    android:layout_alignEnd="@+id/alarmswitch1"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/alarmswitch1"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring1"
+                    android:layout_alignBottom="@+id/edtnotes1"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime1"
+                    android:layout_below="@+id/edtnotes1"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate1"
+                    android:layout_below="@+id/SwitchRecurring1"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+
+                    android:onClick="activeOnClick1" android:text="Date / Time"/>
+
+            <!--alarm2-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 2"
+                    android:id="@+id/txtalarm2"
+                    android:layout_below="@+id/edtTime1"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch2"
+                    android:layout_below="@+id/edtTime1"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes2"
+                    android:layout_alignEnd="@+id/alarmswitch1"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm2"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring2"
+                    android:layout_below="@+id/alarmswitch2"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime2"
+                    android:layout_below="@+id/edtnotes2"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate2"
+                    android:layout_below="@+id/SwitchRecurring2"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+
+            <!--alarm3-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 3"
+                    android:id="@+id/txtalarm3"
+                    android:layout_below="@+id/edtTime2"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch3"
+                    android:layout_below="@+id/edtTime2"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes3"
+                    android:layout_alignEnd="@+id/alarmswitch2"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm3"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring3"
+                    android:layout_below="@+id/alarmswitch3"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime3"
+                    android:layout_below="@+id/edtnotes3"
+                    android:layout_alignParentStart="true"
+                    android:nestedScrollingEnabled="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate3"
+                    android:layout_below="@+id/SwitchRecurring3"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+
+            <!--alarm4-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 4"
+                    android:id="@+id/txtalarm4"
+                    android:layout_below="@+id/edtTime3"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch4"
+                    android:layout_below="@+id/edtTime3"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes4"
+                    android:layout_alignEnd="@+id/alarmswitch3"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm4"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring4"
+                    android:layout_below="@+id/alarmswitch4"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime4"
+                    android:layout_below="@+id/edtnotes4"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate4"
+                    android:layout_below="@+id/SwitchRecurring4"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+
+            <!--alarm5-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 5"
+                    android:id="@+id/txtalarm5"
+                    android:layout_below="@+id/edtTime4"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch5"
+                    android:layout_below="@+id/edtTime4"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes5"
+                    android:layout_alignEnd="@+id/alarmswitch4"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm5"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring5"
+                    android:layout_below="@+id/alarmswitch5"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime5"
+                    android:layout_below="@+id/edtnotes5"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate5"
+                    android:layout_below="@+id/SwitchRecurring5"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <!--alarm6-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 6"
+                    android:id="@+id/txtalarm6"
+                    android:layout_below="@+id/edtTime5"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch6"
+                    android:layout_below="@+id/edtTime5"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes6"
+                    android:layout_alignEnd="@+id/alarmswitch5"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm6"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring6"
+                    android:layout_below="@+id/alarmswitch6"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime6"
+                    android:layout_below="@+id/edtnotes6"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate6"
+                    android:layout_below="@+id/SwitchRecurring6"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <!--alarm7-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 7"
+                    android:id="@+id/txtalarm7"
+                    android:layout_below="@+id/edtTime6"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch7"
+                    android:layout_below="@+id/edtTime6"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes7"
+                    android:layout_alignEnd="@+id/alarmswitch6"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm7"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring7"
+                    android:layout_below="@+id/alarmswitch7"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime7"
+                    android:layout_below="@+id/edtnotes7"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate7"
+                    android:layout_below="@+id/SwitchRecurring7"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <!--alarm8-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 8"
+                    android:id="@+id/txtalarm8"
+                    android:layout_below="@+id/edtTime7"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch8"
+                    android:layout_below="@+id/edtTime7"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes8"
+                    android:layout_alignEnd="@+id/alarmswitch7"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm8"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring8"
+                    android:layout_below="@+id/alarmswitch8"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime8"
+                    android:layout_below="@+id/edtnotes8"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate8"
+                    android:layout_below="@+id/SwitchRecurring8"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <!--alarm9-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 9"
+                    android:id="@+id/txtalarm9"
+                    android:layout_below="@+id/edtTime8"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch9"
+                    android:layout_below="@+id/edtTime8"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes9"
+                    android:layout_alignEnd="@+id/alarmswitch8"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm9"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring9"
+                    android:layout_below="@+id/alarmswitch9"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime9"
+                    android:layout_below="@+id/edtnotes9"
+                    android:layout_alignParentStart="true"
+            />
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate9"
+                    android:layout_below="@+id/SwitchRecurring9"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <!--alarm10-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm 10"
+                    android:id="@+id/txtalarm10"
+                    android:layout_below="@+id/edtTime9"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:id="@+id/alarmswitch10"
+                    android:layout_below="@+id/edtTime9"
+                    android:layout_centerHorizontal="true" android:onClick="toggleAlarm"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtnotes10"
+                    android:layout_alignEnd="@+id/alarmswitch9"
+                    android:layout_marginEnd="53dp"
+                    android:layout_below="@+id/txtalarm10"
+                    android:text="Notes"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat"
+                    android:id="@+id/SwitchRecurring10"
+                    android:layout_below="@+id/alarmswitch10"
+                    android:layout_alignParentEnd="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtTime10"
+                    android:layout_below="@+id/edtnotes10"
+                    android:layout_alignParentStart="true"
+                    android:nestedScrollingEnabled="false"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edtDate10"
+                    android:layout_below="@+id/SwitchRecurring10"
+                    android:layout_alignStart="@+id/SwitchRecurring1"
+                    android:text="Date / Time" android:onClick="activeOnClick1"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtDate10"
+                    android:text="Save Alarms"
+                    android:id="@+id/btnsavealarms" android:onClick="saveAlarmData"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

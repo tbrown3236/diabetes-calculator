@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EnteryourGlucose"
+            android:id="@+id/txtglucose"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtglucose" android:hint="@string/enterglucose"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enterYourA1c"
+            android:id="@+id/txta1c"/>
+    <RadioGroup
+            android:layout_width="135dp"
+            android:layout_height="wrap_content" android:layout_weight="0.34">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edta1c" android:layout_gravity="right" android:hint="@string/enderA1c"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:text="@string/calcAdg"
+                android:id="@+id/rdoadag" android:checked="false" android:onClick="radiobuttonclicked"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calcDCCT"
+                android:id="@+id/rdodcct" android:checked="true" android:onClick="radiobuttonclicked"/>
+    </RadioGroup>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="6"
+            android:id="@+id/txtanswer" android:layout_gravity="center_horizontal"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcanswer"
+            android:id="@+id/btncalc" android:layout_gravity="center_horizontal" android:onClick="calculate"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LogMyData"
+            android:id="@+id/btnlogmydata" android:layout_gravity="center_horizontal" android:onClick="switchtologger"/>
+</LinearLayout>
+

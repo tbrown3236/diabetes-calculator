@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">diabetescalc</string>
+
+    <string name="BloodSugar">El nivel de azúcar en la sangre</string>
+    <string name="Description">Descripción</string>
+    <string name="LogMyData">Registrar mi dato</string>
+    <string name="Back2">Volver</string>
+    <string name="startdate">Fecha de inicio</string>
+    <string name="Startdate2">Fecha de inicio</string>
+    <string name="enddate4">Fecha de finalización</string>
+    <string name="enddate12">Fecha de finalización</string>
+    <string name="Enddate">Fecha de finalización</string>
+    <string name="date">Fecha</string>
+    <string name="time">Tiempo</string>
+    <string name="mealtime">La hora de la comida</string>
+    <string name="Beforemeal">Antes de la comida</string>
+    <string name="Aftermeal">Después de la comida</string>
+    <string name="neither">Ni</string>
+    <string name="bloodSugar">El nivel de azúcar en la sangre</string>
+    <string name="notes">Notas</string>
+    <string name="showChart">Mostrar gráfico</string>
+    <string name="saveBloodSugar">Guarde el nivel de azúcar en la sangre</string>
+    <string name="EnteryourGlucose">Introduzca su glucosa</string>
+    <string name="enterglucose">Introducir la glucosa</string>
+    <string name="enterYourA1c">Introduzca su A1c</string>
+    <string name="enderA1c">Introduzca A1c</string>
+    <string name="calcAdg">Calcular ADAG</string>
+    <string name="calcDCCT">Calcular DCCT</string>
+    <string name="calcanswer">Calcular</string>
+</resources>

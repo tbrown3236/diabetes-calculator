@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/switchToBloodPage"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_calculator"
+        android:title="Calculate Blood Sugar"
+        />
+    <item
+            android:id="@+id/switchToLogPage"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:icon="@drawable/ic_log"
+            android:title="Log Blood Sugar"
+    />
+    <item
+            android:id="@+id/switchToChartPage"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:icon="@drawable/ic_chart"
+            android:title="Chart Blood Sugar"
+    />
+    <item
+            android:id="@+id/switchToAlarmPage"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:icon="@drawable/ic_alarm"
+            android:title=" Blood Sugar Alarms"
+    />
+    <item
+            android:id="@+id/switchToAbout"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:icon="@drawable/ic_contact"
+            android:title="About"
+    />
+    <item
+            android:id="@+id/switchToPreferences"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:icon="@drawable/ic_preferences"
+            android:title="Preferences"
+    />
+</menu>
